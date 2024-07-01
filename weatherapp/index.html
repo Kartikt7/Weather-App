@@ -29,8 +29,6 @@
     }
 
     body {
-      /* background: linear-gradient(rgba(223, 221, 221, 0.9), rgba(253, 226, 226, 0.3)), url("pA4nMSi.jpg"); */
-       /* background-image: url("https://img.freepik.com/free-photo/view-3d-cloud_23-2151113470.jpg"); */
 
       background-size: cover;
       /* Adjust to your preference */
@@ -331,26 +329,7 @@
   let time = currdate.getHours();
   // console.log(time);
   var imageElement;
-  // if (time < 8 && time > 4) {
-  //   imageElement = document.getElementById("sun1");
-  //   imageElement.style.width = "80px";
-  //   imageElement.style.height = "80px";
-  // }
-  // if (time < 16 && time > 8) {
-  //   imageElement = document.getElementById("sun2");
-  //   imageElement.style.width = "80px";
-  //   imageElement.style.height = "80px";
-  // }
-  // if (time > 16 && time < 19) {
-  //   imageElement = document.getElementById("sun3");
-  //   imageElement.style.width = "80px";
-  //   imageElement.style.height = "80px";
-  // }
-  // if (time > 19) {
-  //   imageElement = document.getElementById("sun4");
-  //   imageElement.style.width = "80px";
-  //   imageElement.style.height = "80px";
-  // }
+
 
   // API connectivity
   let dailytemp = document.getElementById("dailytemp");
@@ -378,8 +357,7 @@
       if (data.current.cloud < 30) {
         let body = document.querySelector("body");
         body.style.backgroundImage = "url('y4CURI.jpg')";
-        // img.src = "pngtree-good-morning-sun-smile-no-background-png-image_3835933-removebg-preview.png";
-        // img.alt = "morning-icon-4-removebg-preview.png";
+
       }
       else if (data.current.cloud > 30 & data.current.cloud < 60) {
         let body = document.querySelector("body");
@@ -396,97 +374,10 @@
     }
   }
 
-  // next 7 days for weather update
-  // let daymon = document.getElementById("mond");
-  // let daytue = document.getElementById("tued");
-  // let daywed = document.getElementById("wedd");
-  // let daythr = document.getElementById("thurd");
-  // let dayfri = document.getElementById("frid");
-  // let daysat = document.getElementById("satd");
-  // let daysun = document.getElementById("sund");
-  // let i = currdate.getDay();
-  // i++;
-  // let count = 1;
-  // while (count <= 7) {
-  //   if (count == 1) {
-  //     daymon.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 2) {
-  //     daytue.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 3) {
-  //     daywed.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 4) {
-  //     daythr.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 5) {
-  //     dayfri.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 6) {
-  //     daysat.innerText = dayselect();
-  //     i++;
-  //   }
-  //   else if (count == 7) {
-  //     daysun.innerText = dayselect();
-  //     i++;
-  //   }
-  //   count++;
-  // }
-  // function dayselect() {
-  //   if (i == 1) {
-
-  //     return;
-  //   }
-  //   else if (i == 2) {
-  //     return "Tuesday";
-  //   }
-  //   else if (i == 3) {
-  //     return "Wednesday";
-  //   }
-  //   else if (i == 4) {
-  //     return "Thrusday";
-  //   }
-  //   else if (i == 5) {
-  //     return "Friday";
-  //   }
-  //   else if (i == 6) {
-  //     return "Saturday";
-  //   }
-  //   else if (i == 7) {
-  //     return "Sunday";
-  //   }
-  //   else if (i == 8) {
-  //     i = 1;
-  //     return "Monday";
-  //   }
-  // }
-  // function conditionselect() {
-
-
-  // }
   // weekly data update of weather 
   let tempmon = document.getElementById("tempmon");
-  // let temptue = document.getElementById("temptue");
-  // let tempwed = document.getElementById("tempwed");
-  // let tempthr = document.getElementById("tempthr");
-  // let tempfri = document.getElementById("tempfri");
-  // let tempsat = document.getElementById("tempsat");
-  // let tempsun = document.getElementById("tempsun");
 
   let mon = document.getElementById("mon");
-  // let tue = document.getElementById("tue");
-  // let wed = document.getElementById("wed");
-  // let thr = document.getElementById("thu");
-  // let fri = document.getElementById("fri");
-  // let sat = document.getElementById("sat");
-  // let sun = document.getElementById("sun");
-  // message shown 
 
 
   let data1 = document.getElementById("data")
@@ -550,15 +441,6 @@ function createCard(element) {
 
     return card;
 }
-
-// Get the container element
-
-
-// Create and append cards to the container
-// daysData.forEach(({ day, temp, weather }) => {
-//     const card = createCard(day, temp, weather);
-//     
-// });
 
 
 
